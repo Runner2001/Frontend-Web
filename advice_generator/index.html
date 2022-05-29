@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Advice generator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="advice_card">
+        <h5 class="advice_id">ADVICE <span id="advice_id"></span></h5>
+        <p class="advice_detail">
+          &quot;
+          <span id="advice_detail"> </span>
+          &quot;
+        </p>
+        <div class="pattern">
+          <img
+            src="./images/pattern-divider-desktop.svg"
+            alt="pattern-divider-desktop"
+            class="pattern_img-desktop"
+          />
+          <img
+            src="./images/pattern-divider-mobile.svg"
+            alt="pattern-divider-desktop"
+            class="pattern_img-mobile"
+          />
+        </div>
+        <a href="#" class="device_button" id="device_button">
+          <img src="./images/icon-dice.svg" alt="icon-dice" class="icon-dice" />
+        </a>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

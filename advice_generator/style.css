@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800;500;600&display=swap');
+
+:root{
+    --Light_Cyan: hsl(193, 38%, 86%);
+    --Neon_Green: hsl(150, 100%, 66%);
+    --Grayish_Blue: hsl(217, 19%, 38%);
+    --Dark_Grayish_Blue: hsl(217, 19%, 24%);
+    --Dark_Blue: hsl(218, 23%, 16%);
+    --quote_font: 24px;
+    --quote_font_weight: 800;
+}
+*{
+    margin: 0;
+    padding: 0%;
+    font-family: 'Manrope', sans-serif;
+}
+body{
+    background-color: var(--Dark_Blue);
+    color: var(--Light_Cyan);
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice_card{
+    position: relative;
+    background-color: var(--Dark_Grayish_Blue);
+    width: fit-content;
+    padding: 2rem 3rem;
+    border-radius: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice_id{
+    color: var(--Neon_Green);
+    letter-spacing: 5px;
+    font-size: .6rem;
+    margin-bottom: 2rem;
+}
+
+.advice_detail{
+    width: 400px;
+    font-size: var(--quote_font);
+    font-weight: var(--quote_font_weight);
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.pattern{
+    margin-bottom: .8rem;
+}
+
+.device_button{
+    position: absolute;
+    bottom: -1.6rem;
+    padding: .8rem;
+    background-color: var(--Neon_Green);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.device_button:hover{
+    box-shadow: 0px 0px 20px 2px var(--Neon_Green);
+}
+
+.pattern .pattern_img-mobile{
+    display: none;
+}
+
+.pattern .pattern_img-desktop{
+    display: block;
+}
+
+/* @media screen and (max-width: 375px) {
+    .pattern .pattern_img-desktop{
+        display: none;
+    }
+    .pattern .pattern_img-mobile{
+        display: block;
+    }
+    .advice_card{
+        padding: 2rem 1rem;
+        border-radius: .4rem;
+    }
+    .advice_detail{
+        width: 300px;
+        font-size: 20px;
+    }
+    .advice_id{
+        margin-bottom: 1.5rem;
+    }
+} */
+
+@media screen and (max-width: 428px) {
+    .pattern .pattern_img-desktop{
+        display: none;
+    }
+    .pattern .pattern_img-mobile{
+        display: block;
+    }
+    .advice_card{
+        padding: 2rem 1rem;
+        border-radius: .4rem;
+    }
+    .advice_detail{
+        width: 300px;
+        font-size: 20px;
+    }
+    .advice_id{
+        margin-bottom: 1.5rem;
+    }
+}
